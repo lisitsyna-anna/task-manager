@@ -40,7 +40,7 @@ export const App = () => {
         />
         <Route
           path="/tasks"
-          element={<PrivateRoute redirectTo="/login" component={TasksPage} />}
+          element={<PrivateRoute component={TasksPage} redirectTo="/login" />}
         />
       </Route>
     </Routes>
